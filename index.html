@@ -54,3 +54,29 @@
 </body>
  
 </html>
+[4:00 pm] SHIVANSI SHISHODIA - 40503230008
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Calculator</title>
+ 
+ 
+    <script>
+        function appendToResult(value) {
+            document.getElementById('result').value += value;
+        }
+ 
+        function calculate() {
+            let input = document.getElementById('result').value;
+            let result = eval(input);
+            document.getElementById('finalResult').value = result;
+        }
+ 
+        function clearAll() {
+            document.getElementById('result').value = '';
+            document.getElementById('finalResult').value = '';
+        }
+    </script>
+ 
+</html>
+ 
