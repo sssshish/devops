@@ -4,7 +4,31 @@
     <title>Calculator</title>
 
 </head>
- 
+<style>
+    table {
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+    }
+     
+    input[type="button"] {
+        width: 100%;
+        padding: 20px 40px;  
+        font-size: 24px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+    }
+     
+    input[type="text"] {
+        padding: 20px 30px;
+        font-size: 24px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        border: 2px solid black;
+    }
+</style>
 <body>
  
     <table id="calcu">
@@ -21,8 +45,7 @@
  
     </table>
 
-    <input type="button" value="Clear" onclick="clearAll()" style="display: block; margin: 20px auto; padding: 10px 20px; font-size: 18px;">
-
+    
         <tr>
             <td><input type="button" value="1" onclick="appendToResult('1')"></td>
             <td><input type="button" value="2" onclick="appendToResult('2')"></td>
@@ -50,16 +73,9 @@
     </table>
    
     
-    
+    <input type="button" value="Clear" onclick="clearAll()" style="display: block; margin: 20px auto; padding: 10px 20px; font-size: 18px;">
+
 </body>
- 
-</html>
-[4:00 pm] SHIVANSI SHISHODIA - 40503230008
-<!DOCTYPE html>
-<html>
-<head>
-    <title>HTML Calculator</title>
- 
  
     <script>
         function appendToResult(value) {
